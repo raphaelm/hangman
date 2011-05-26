@@ -1,0 +1,80 @@
+<!--
+        device.html
+        
+        Copyright 2011 Raphael Michel <webmaster@raphaelmichel.de>
+        
+        This program is free software; you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation; either version 2 of the License, or
+        (at your option) any later version.
+        
+        This program is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU General Public License for more details.
+        
+        You should have received a copy of the GNU General Public License
+        along with this program; if not, write to the Free Software
+        Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+        MA 02110-1301, USA.
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Hangman</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="device.js"></script>
+	<link rel="stylesheet" type="text/css" href="device.css" />
+	<link rel="apple-touch-icon" href="img/apple.png">
+</head>
+
+<body>
+	<div class="overlay">
+		<h1 id="state">Hallo!</h1>
+		Neues Wort eingeben:<br />
+		<input type="text" value="" id="newword" />
+		<input type="button" value="GO" onclick="setword()" />
+	</div>
+	<div id="wrapper">
+		<div id="keyboard">
+			<a href="javascript:void(0)" class="key" id="keyA">A</a>
+			<a href="javascript:void(0)" class="key" id="keyB">B</a>
+			<a href="javascript:void(0)" class="key" id="keyC">C</a>
+			<a href="javascript:void(0)" class="key" id="keyD">D</a>
+			<a href="javascript:void(0)" class="key" id="keyE">E</a>
+			<a href="javascript:void(0)" class="key" id="keyF">F</a>
+			<a href="javascript:void(0)" class="key" id="keyG">G</a>
+			<a href="javascript:void(0)" class="key" id="keyH">H</a>
+			<a href="javascript:void(0)" class="key" id="keyI">I</a>
+			<a href="javascript:void(0)" class="key" id="keyJ">J</a>
+			<a href="javascript:void(0)" class="key" id="keyK">K</a>
+			<a href="javascript:void(0)" class="key" id="keyL">L</a>
+			<a href="javascript:void(0)" class="key" id="keyM">M</a>
+			<a href="javascript:void(0)" class="key" id="keyN">N</a>
+			<a href="javascript:void(0)" class="key" id="keyO">O</a>
+			<a href="javascript:void(0)" class="key" id="keyP">P</a>
+			<a href="javascript:void(0)" class="key" id="keyQ">Q</a>
+			<a href="javascript:void(0)" class="key" id="keyR">R</a>
+			<a href="javascript:void(0)" class="key" id="keyS">S</a>
+			<a href="javascript:void(0)" class="key" id="keyT">T</a>
+			<a href="javascript:void(0)" class="key" id="keyU">U</a>
+			<a href="javascript:void(0)" class="key" id="keyV">V</a>
+			<a href="javascript:void(0)" class="key" id="keyW">W</a>
+			<a href="javascript:void(0)" class="key" id="keyX">X</a>
+			<a href="javascript:void(0)" class="key" id="keyY">Y</a>
+			<a href="javascript:void(0)" class="key" id="keyZ">Z</a>
+			<a href="javascript:void(0)" class="key" id="keya">Ä</a>
+			<a href="javascript:void(0)" class="key" id="keyo">Ö</a>
+			<a href="javascript:void(0)" class="key" id="keyu">Ü</a>
+			<a href="javascript:void(0)" class="key" id="keys">ß</a>
+		</div>
+	</div>
+</body>
+
+</html>
+

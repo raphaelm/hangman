@@ -1,0 +1,29 @@
+body {
+	margin: 0;
+}
+#top, #bottom {
+	margin: 0;
+	padding: 0;
+	height: 50%;
+} 
+#top {
+	background: white;
+	text-align: center;
+}
+#bottom {
+	background: black;
+	font-size: 0px;
+	text-align: center;
+	overflow: hidden;
+}
+.letter {
+	font-family: monospace;
+	font-weight: bold;
+	color: white;
+	font-size: 10px;
+	padding: 5px;
+	text-decoration: none;
+}
+#letters {
+	display: inline;
+}
