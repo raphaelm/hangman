@@ -1,0 +1,70 @@
+[English version is maybe coming, but this software is intended to
+be used by German people (because of the character set)]
+
+HANGMAN
+=======
+
+HANGMAN ist eine sehr spezielle Implementation des beliebten Galgenmänn-
+chenspiels, die für dich nur mit einer sehr geringen Wahrscheinlichkeit
+das ist, was du suchst.
+
+Diese Software ist erschaffen um Hangman mit zwei Geräten zu spielen. Das
+eine Gerät ist das „Display“ - zum Beispiel ein Computer mit großem 
+Bildschirm oder angeschlossenem Beamer. Das zweite Gerät aber ist das
+Bediengerät („device“), zum Beispiel ein Smartphone oder ein anderes
+WLAN-taugliches mobiles Endgerät. Das Display zeigt den Spielstand an,
+während die Buchstaben, die geraten werden sollen, am Bediengerät ein-
+gegeben werden.
+
+ANLEITUNG
+---------
+	Am „Display“, dem Gerät, an dem der Spielstand angezeigt werden soll
+	die Datei
+		hangman.py
+	ausführen. Es wird ein HTTP-Server gestartet und es öffnet sich
+	automatisch der Standardbrowser mit der Adresse
+		http://localhost:54733/display
+	die das Display anzeigt.
+	
+	Am Eingabegerät, zum Beispiel einem Smartphone muss dann die
+	lokale IP-Adresse des Computers eingegeben werden, auf dem das Hangman-
+	Programm ausgeführt wird, zusammen mit dem unten angegebenen Port und
+	Pfad:
+		http://ip:54733/device
+	Also beispielsweise:
+		http://192.168.0.104:54733/device
+		
+	Have fun!	
+
+SPIELEIGENSCHAFTEN
+------------------
+	* 9. Fehler -> Tod
+	* ÄÖÜß werden unterstüzt
+	* Leerzeichen werden unterstützt und als „·“ dargestellt (müssen
+	  nicht erraten werden)
+
+VORRAUSSETZUNGEN
+----------------
+
+	* Python 2.x (gestestet unter 2.7.1)
+	
+GETESTET MIT
+------------
+	Server:
+		* Python 2.7.1 auf Ubuntu 11.04
+	Display:
+		* Opera 11.11 auf Ubuntu 11.04
+		* Google Chrome 13.0.772.0 dev auf Ubuntu 11.04
+		* Mozilla Firefox 4.0.1 auf Ubuntu 11.04
+	Device:
+		* Safari (iOS 4.2.1) auf dem iPod touch
+			* Home-Screen-Icon unterstützt
+		* Opera Mobile 10.1 beta Emulator auf Ubuntu 11.04
+
+COPYRIGHT & LIZENZ
+------------------
+
+Autor:  Raphael Michel <webmaster@raphaelmichel.de>
+        http://www.raphaelmichel.de
+        http://www.geeksfactory.de
+Lizenz: GNU General Public License
