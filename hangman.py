@@ -77,11 +77,9 @@ class HangmanHTTPHandler(BaseHTTPServer.BaseHTTPRequestHandler):
 			for c in word:
 				if c == " ":
 					progress[i] = "·"
-				if c not in ["A", "B", "C", "E", "F", "G", "H", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "o", "u", "s"]:
+				if c not in [" ", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "o", "u", "s"]:
 					warning = True
 				i += 1
-			if len(uniquify(list(word))) > 21:
-				warning = True
 			rand = random.random()
 			state = 'playing'
 			self.send_response(200)
