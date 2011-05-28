@@ -19,7 +19,7 @@ function refresh(){
 			if(c == "o") c = "Ö";
 			if(c == "u") c = "Ü";
 			if(c == "s") c = "ß";
-			newl += '<span class="letter" style="font-size: '+fs+'">'+c+'</span>'
+			newl += '<span class="letter" style="font-size: '+fs+'">'+c+'</span> '
 		}
 		if(newl != $("#letters").html())
 			$("#letters").html(newl)
